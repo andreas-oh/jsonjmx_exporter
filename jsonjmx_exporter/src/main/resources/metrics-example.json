@@ -1,0 +1,42 @@
+[
+  {
+    "metric-name" : "currentUse",
+    "value-name" : "used",
+    "value-type" : "guage",
+    "jmx-property": {
+      "type":"read",
+      "mbean":"java.lang:type=Memory",
+      "attribute":"HeapMemoryUsage"
+    }
+  },
+  {
+    "metric-name" : "maxAllowed",
+    "value-name" : "max",
+    "value-type" : "guage",
+    "jmx-property": {
+      "type":"read",
+      "mbean":"java.lang:type=Memory",
+      "attribute":"HeapMemoryUsage"
+    }
+  },
+  {
+    "metric-name" : "processCpu",
+    "value-name" : "",
+    "value-type" : "guage",
+    "jmx-property" : {
+      "type":"read",
+      "mbean":"java.lang:type=OperatingSystem",
+      "attribute":"ProcessCpuLoad"
+    }
+  },
+  {
+    "metric-name" : "systemCpu",
+    "value-name" : "",
+    "value-type" : "guage",
+    "jmx-property" : {
+      "type":"read",
+      "mbean":"java.lang:type=OperatingSystem",
+      "attribute":"SystemCpuLoad"
+    }
+  }
+]
