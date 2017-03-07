@@ -1,1 +1,2 @@
-# jsonjmx_prometheus
+# jsonjmx_exporter
+
